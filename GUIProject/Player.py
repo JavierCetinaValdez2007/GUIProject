@@ -50,4 +50,3 @@ class Player(pygame.sprite.Sprite):
             self.rect.top = 5
         if self.rect.bottom >= self.SCREEN_HEIGHT:
             self.rect.bottom = self.SCREEN_HEIGHT-5
-
