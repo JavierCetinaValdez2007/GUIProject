@@ -38,10 +38,12 @@ def main():
         screen.fill((255,255,255))
         allSprites.draw(screen)
         pygame.display.flip()
-            
+
         if(pygame.sprite.collide_rect(player,car1)) or (pygame.sprite.collide_rect(player,car2)) or (pygame.sprite.collide_rect(player,car3)):
             running = False
         clock.tick(30)
+        #for i in range(clock.tick):
+            
 
 if __name__ == '__main__':
     pygame.init()

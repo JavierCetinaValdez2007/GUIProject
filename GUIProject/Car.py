@@ -14,17 +14,7 @@ class Car(pygame.sprite.Sprite):
 
         self.SCREEN_WIDTH = SCREEN_WIDTH
         self.SCREEN_HEIGHT = SCREEN_HEIGHT
-        startY = STARTY
-        startX = STARTX
 
-        self.pos = pygame.math.Vector2(startX,startY)
-        self.center_pos = pygame.math.Vector2(
-            startX + (self.width/2),
-            startY + (self.height/2)
-        )
-        self.rect = self.image.get_rect(
-            center = (startX/2,startY/2)
-        )
-        if self.pos.x < SCREEN_WIDTH:
-            self.pos.x += 40
-        
+        self.startx = STARTX
+        self.starty =  STARTY
+       
